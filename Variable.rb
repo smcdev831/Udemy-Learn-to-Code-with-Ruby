@@ -11,3 +11,13 @@ puts name + " " + last_name
 puts handsome
 
 puts age + 5
+
+age  = 50
+
+puts age
+
+favorite_number = 24
+p favorite_number
+
+favorite_number = "24"
+p favorite_number
