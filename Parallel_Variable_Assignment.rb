@@ -7,3 +7,7 @@ p b
 p c
 
 p a, b, c
+
+puts a, b, c
+
+print a, b, c
