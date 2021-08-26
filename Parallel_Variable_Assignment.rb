@@ -11,3 +11,7 @@ p a, b, c
 puts a, b, c
 
 print a, b, c
+
+a, b, c = 10, 20, 30
+
+p a, b, c
