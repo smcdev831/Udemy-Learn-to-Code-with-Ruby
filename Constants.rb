@@ -6,3 +6,12 @@ p age
 
 NAME = "Boris"
 PI = 3.14159
+
+p NAME
+p PI
+
+p "My name is #{NAME}"
+
+NAME = "Jeff"
+
+p "My name is #{NAME}"
