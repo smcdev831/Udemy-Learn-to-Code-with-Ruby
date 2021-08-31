@@ -14,6 +14,7 @@ puts -837.class
 
 puts 5.987
 puts 5.987.class
+puts 5.987.next #does not work on a float
 
 puts 2.71
 puts 2.71.class
