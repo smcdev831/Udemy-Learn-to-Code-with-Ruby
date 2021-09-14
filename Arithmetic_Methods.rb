@@ -1,4 +1,8 @@
 puts 1.next()
+
+puts 1 + 2
+puts 1.+(2)
+
 puts 10 - 5
 puts 3 * 4
 puts 10 / 5
