@@ -8,3 +8,5 @@ end
   puts 'Boris is incredible'
   puts 'I am having so much fun learning Ruby'
 end
+
+3.times { |count| puts "We are on number #{count}"}
