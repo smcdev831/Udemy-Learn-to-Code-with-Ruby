@@ -18,3 +18,14 @@ puts b
 
 b = 100
 puts b -=50
+
+c = 3
+puts c
+
+c = 3
+c = c * 4
+puts c
+
+c = 3
+c *= 4
+puts c
