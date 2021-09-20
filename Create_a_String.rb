@@ -18,3 +18,6 @@ puts empty.class
 
 name = String.new("Boris")
 puts name
+
+puts 5.to_s
+puts 5.to_s.class
