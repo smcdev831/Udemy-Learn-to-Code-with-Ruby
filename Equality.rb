@@ -20,3 +20,10 @@ puts "Hello" < "Help"
 #uppercase is priority over lowercase A-Z, then a-z
 puts "A" < "a"
 puts "Z" < "a"
+
+puts "Help" < "Banana"
+puts "Help" < "banana"
+
+puts true == true
+puts true == false
+puts false == false
