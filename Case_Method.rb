@@ -16,3 +16,8 @@ lowercase = "I'm patient"
 uppercase = lowercase.upcase
 puts lowercase
 puts uppercase
+
+puts "BORIS".downcase
+puts "BORIS{}(^&*%^)".downcase
+
+puts "boRIs".swapcase
