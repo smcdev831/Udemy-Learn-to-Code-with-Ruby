@@ -4,4 +4,10 @@ def introduce_myself
   puts "I am brilliant"
 end
 
+# introduce_myself
+
+introduce_myself
+introduce_myself
+introduce_myself
+introduce_myself
 introduce_myself
