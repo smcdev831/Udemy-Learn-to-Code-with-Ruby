@@ -8,4 +8,4 @@ end
 
 authenticate_agent("007", "James Bond", "Spy")
 authenticate_agent("007", "Jim Bond", "Spy")
-authenticate_agent("007", "Jim Bond", "Secret Agent")
+authenticate_agent("007", "Alec Trevelyan", "Secret Agent")
