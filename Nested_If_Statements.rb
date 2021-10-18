@@ -24,5 +24,6 @@ end
 
 meal_plan("weekday", "lunch")
 meal_plan("weekday", "dinner")
-meal_plan("weekend", "lunch")
+meal_plan("weekend", "breakfast")
+meal_plan("weekend", "dinner")
 meal_plan("weekday", "brunch")
