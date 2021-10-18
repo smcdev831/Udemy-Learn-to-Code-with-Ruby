@@ -6,6 +6,8 @@ def meal_plan(time_of_week, time_of_day)
       puts "Sandwich"
     elsif time_of_day == "dinner"
       puts "Chicken Nuggets"
+    else
+      puts "Breakfast, lunch, and dinner only. No snacking!"
     end
   elsif time_of_week =="weekend"
     if time_of_day == "breakfast"
@@ -14,10 +16,13 @@ def meal_plan(time_of_week, time_of_day)
       puts "BBQ Chicken Pizza"
     elsif time_of_day == "dinner"
       puts "Steak"
+    else
+      puts "Breakfast, lunch, and dinner only. No snacking!"
     end
   end
 end
 
 meal_plan("weekday", "lunch")
+meal_plan("weekday", "dinner")
 meal_plan("weekend", "lunch")
 meal_plan("weekday", "brunch")
