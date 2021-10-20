@@ -4,5 +4,4 @@ else
   puts "No, it's not"
 end
 
-
 puts 1 < 2 ? "Yes, it is" : "No, it's not"
