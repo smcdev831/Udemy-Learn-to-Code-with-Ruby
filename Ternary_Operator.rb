@@ -20,4 +20,12 @@ def even_or_odd(number)
 end
 
 puts even_or_odd(6)
-puts even_or_odd(11)
+puts even_or_odd(13)
+
+pokemon = "Pikachu"
+
+if pokemon == "Charizard"
+  puts "Fireball"
+else
+  puts "That is not Charizard"
+end
