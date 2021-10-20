@@ -29,3 +29,8 @@ if pokemon == "Charizard"
 else
   puts "That is not Charizard"
 end
+
+puts pokemon == "Charizard" ? "Fireball" : "That is not Charizard"
+
+pokemon = "Charizard"
+puts pokemon == "Charizard" ? "Fireball" : "That is not Charizard"
