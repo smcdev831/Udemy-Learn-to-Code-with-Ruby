@@ -34,3 +34,12 @@ puts pokemon == "Charizard" ? "Fireball" : "That is not Charizard"
 
 pokemon = "Charizard"
 puts pokemon == "Charizard" ? "Fireball" : "That is not Charizard"
+
+def check_pokemon(pokemon)
+  puts pokemon == "Charizard" ? "Fireball" : "That is not Charizard"
+end
+
+puts check_pokemon("Pikachu")
+puts check_pokemon("Squirtle")
+puts check_pokemon("Onyx")
+puts check_pokemon("Charizard")
