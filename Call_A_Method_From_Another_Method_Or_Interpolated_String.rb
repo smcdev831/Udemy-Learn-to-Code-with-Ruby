@@ -9,3 +9,6 @@ end
 def multiply(a, b)
   a * b
 end
+
+def calculator(a, b, operation = "add")
+end
