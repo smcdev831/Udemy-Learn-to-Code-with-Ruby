@@ -29,3 +29,15 @@ puts calculator(10, 20, "subtract")
 puts calculator(8, 8, "multiply")
 
 puts calculator(10, 4, "blah blah blah")
+
+def calculator(a, b, operation = "add")
+  if operation == "add"
+    puts "The result of adding is #{add(a, b)}"
+  elsif operation == "subtract"
+    puts "The result of subtracting is #{subtract(a, b)}"
+  elsif operation == "multiply"
+    puts "The result of multiplying is #{multiply(a, b)}"
+  else
+    "That's not a real math operation, genius!"
+  end
+end
