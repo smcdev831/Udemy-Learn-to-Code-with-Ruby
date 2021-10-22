@@ -11,4 +11,12 @@ def multiply(a, b)
 end
 
 def calculator(a, b, operation = "add")
+  if operation == "add"
+    add(a, b)
+  elsif operation == "subtract"
+    subtract(a, b)
+  elsif operation == "multiply"
+    multiply(a, b)
+  else
+    "That's not a real math operation, genius!"    
 end
