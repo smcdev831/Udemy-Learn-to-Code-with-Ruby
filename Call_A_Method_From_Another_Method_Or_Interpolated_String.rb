@@ -41,3 +41,8 @@ def calculator(a, b, operation = "add")
     "That's not a real math operation, genius!"
   end
 end
+
+puts calculator(10,4)
+puts calculator(10,4, "add")
+puts calculator(10,4, "subtract")
+puts calculator(10,4, "multiply")
