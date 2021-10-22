@@ -18,5 +18,12 @@ def calculator(a, b, operation = "add")
   elsif operation == "multiply"
     multiply(a, b)
   else
-    "That's not a real math operation, genius!"    
+    "That's not a real math operation, genius!"
+  end
 end
+
+puts calculator(3, 2, "add")
+puts calculator(3, 2)
+
+puts calculator(3, 2, "subtract")
+puts calculator(3, 2, "multiply")
