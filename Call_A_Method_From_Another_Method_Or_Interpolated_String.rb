@@ -25,5 +25,5 @@ end
 puts calculator(3, 2, "add")
 puts calculator(3, 2)
 
-puts calculator(3, 2, "subtract")
-puts calculator(3, 2, "multiply")
+puts calculator(10, 20, "subtract")
+puts calculator(8, 8, "multiply")
