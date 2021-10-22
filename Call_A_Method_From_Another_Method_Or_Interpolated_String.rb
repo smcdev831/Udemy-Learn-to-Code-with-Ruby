@@ -27,3 +27,5 @@ puts calculator(3, 2)
 
 puts calculator(10, 20, "subtract")
 puts calculator(8, 8, "multiply")
+
+puts calculator(10, 4, "blah blah blah")
