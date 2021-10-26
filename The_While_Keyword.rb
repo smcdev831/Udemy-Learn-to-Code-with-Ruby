@@ -25,3 +25,10 @@ while status
     puts "Incorrect combination, try again or enter 'quit to leave'"
   end
 end
+
+i = 2
+
+while i.even?
+  puts i
+  i += 1
+end
