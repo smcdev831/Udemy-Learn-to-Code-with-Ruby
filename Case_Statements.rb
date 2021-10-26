@@ -12,3 +12,7 @@ def rate_my_food(food)
     "I don't know about that food"
   end
 end
+
+puts rate_my_food("Tofu")
+puts rate_my_food("Yogurt")
+puts rate_my_food("Steak")
