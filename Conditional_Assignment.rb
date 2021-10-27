@@ -14,3 +14,20 @@ puts y
 
 y ||= 10 #won't assign as variable is no longer set as nil
 puts y
+
+greeting = "Hello"
+extraction = 0
+letter = greeting[extraction]
+puts letter
+
+ greeting = "Hello"
+ extraction = 100
+ letter = greeting[extraction]
+ letter ||= "Not found"
+puts letter
+
+greeting = "Hello"
+extraction = 3
+letter = greeting[extraction]
+letter ||= "Not found"
+puts letter
