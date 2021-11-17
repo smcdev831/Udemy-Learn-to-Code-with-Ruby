@@ -29,3 +29,20 @@ puts fruits
 #
 #
 # Kiwi
+
+fruits[3, 2] = ["Cantaloupe", "Dragonfruit"]
+puts fruits
+
+fruits[0..2] = ["Blackberry", "Orange", "Pears"]
+puts fruits
+
+fruits[0..3] = ["Blah"]
+puts fruits
+# Blah
+# Dragonfruit
+# Strawberry
+#
+# 
+#
+#
+# Kiwi
