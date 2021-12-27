@@ -14,3 +14,17 @@ puts 1.is_a?(Bignum)
 puts ["a", "b"].is_a?(Array)
 puts ["a", "b"].is_a?(Integer)
 puts ["a", "b"].is_a?(String)
+
+arr = ["a", "b"]
+
+if arr.is_a?(Array)
+  arr.each { |e| puts e }
+end
+
+arr =5
+
+if arr.is_a?(Array)
+  arr.each { |e| puts e }
+else
+  puts "Not an array"
+end
