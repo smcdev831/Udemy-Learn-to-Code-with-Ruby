@@ -2,6 +2,7 @@ cd /d H:
 gem rdoc --all --ri --no-rdoc
 ri String
 
+Example:
 H:\>ri string
 .string
 
@@ -124,3 +125,24 @@ Implementation from TempIO
 ------------------------------------------------------------------------
 
 The content of the TempIO as a String.
+
+
+
+Example:
+H:\>ri String.upcase
+String.upcase
+
+(from ruby core)
+------------------------------------------------------------------------
+  str.upcase              -> new_str
+  str.upcase([options])   -> new_str
+
+------------------------------------------------------------------------
+
+Returns a copy of str with all lowercase letters replaced with
+their uppercase counterparts.
+
+See String#downcase for meaning of options and use with different
+encodings.
+
+  "hEllO".upcase   #=> "HELLO"
