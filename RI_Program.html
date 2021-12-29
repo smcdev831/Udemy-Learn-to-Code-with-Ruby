@@ -146,3 +146,339 @@ See String#downcase for meaning of options and use with different
 encodings.
 
   "hEllO".upcase   #=> "HELLO"
+
+
+Example:
+H:\>ri String.length
+String.length
+
+(from ruby core)
+------------------------------------------------------------------------
+  string.length -> integer
+
+------------------------------------------------------------------------
+
+Returns the count of characters (not bytes) in self:
+  "\x80\u3042".length # => 2
+  "hello".length # => 5
+
+String#size is an alias for String#length.
+
+Related: String#bytesize.
+
+Example:
+H:\>ri Array.shift
+Array.shift
+
+(from ruby core)
+------------------------------------------------------------------------
+  array.shift -> object or nil
+  array.shift(n) -> new_array
+
+------------------------------------------------------------------------
+
+Removes and returns leading elements.
+
+When no argument is given, removes and returns the first element:
+  a = [:foo, 'bar', 2]
+  a.shift # => :foo
+  a # => ['bar', 2]
+
+Returns nil if self is empty.
+
+When positive Integer argument n is given, removes the first
+n elements; returns those elements in a new Array:
+  a = [:foo, 'bar', 2]
+  a.shift(2) # => [:foo, 'bar']
+  a # => [2]
+
+If n is as large as or larger than self.length, removes
+all elements; returns those elements in a new Array:
+  a = [:foo, 'bar', 2]
+  a.shift(3) # => [:foo, 'bar', 2]
+
+If n is zero, returns a new empty Array; self is
+unmodified.
+
+Related: #push, #pop, #unshift.
+
+Example:
+H:\>ri length
+.length
+
+(from ruby core)
+Implementation from Array
+------------------------------------------------------------------------
+  array.length -> an_integer
+
+------------------------------------------------------------------------
+
+Returns the count of elements in self.
+
+
+(from ruby core)
+Implementation from DBM
+------------------------------------------------------------------------
+  dbm.length -> integer
+  dbm.size -> integer
+
+------------------------------------------------------------------------
+
+Returns the number of entries in the database.
+
+
+(from ruby core)
+Implementation from Instance
+------------------------------------------------------------------------
+  digest_obj.length -> integer
+  digest_obj.size -> integer
+
+------------------------------------------------------------------------
+
+Returns digest_obj.digest_length().
+
+
+(from ruby core)
+Implementation from ENV
+------------------------------------------------------------------------
+  ENV.length -> an_integer
+  ENV.size   -> an_integer
+
+------------------------------------------------------------------------
+
+Returns the count of environment variables:
+  ENV.replace('foo' => '0', 'bar' => '1')
+  ENV.length # => 2
+  ENV.size # => 2
+
+
+(from ruby core)
+Implementation from GDBM
+------------------------------------------------------------------------
+  gdbm.length -> fixnum
+  gdbm.size -> fixnum
+
+------------------------------------------------------------------------
+
+Returns the number of key-value pairs in this database.
+
+
+(from ruby core)
+Implementation from Entry
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+(This method is an alias for Gem::Package::TarReader::Entry#size.)
+
+
+(from ruby core)
+Implementation from Hash
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+Returns the count of entries in self:
+  {foo: 0, bar: 1, baz: 2}.length # => 3
+
+Hash#length is an alias for Hash#size.
+
+
+(This method is an alias for Hash#size.)
+
+Returns the count of entries in self:
+  {foo: 0, bar: 1, baz: 2}.length # => 3
+
+Hash#length is an alias for Hash#size.
+
+
+(from ruby core)
+Implementation from MatchData
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+Returns the number of elements in the match array.
+
+  m = /(.)(.)(\d+)(\d)/.match("THX1138.")
+  m.length   #=> 5
+  m.size     #=> 5
+
+
+(This method is an alias for MatchData#size.)
+
+Returns the number of elements in the match array.
+
+  m = /(.)(.)(\d+)(\d)/.match("THX1138.")
+  m.length   #=> 5
+  m.size     #=> 5
+
+
+(from ruby core)
+Implementation from Net::POPMail
+------------------------------------------------------------------------
+
+The length of the message in octets.
+
+
+(from ruby core)
+Implementation from WeakMap
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+Returns the number of referenced objects
+
+
+
+(This method is an alias for ObjectSpace::WeakMap#size.)
+
+Returns the number of referenced objects
+
+
+
+(from ruby core)
+Implementation from Queue
+------------------------------------------------------------------------
+  length
+  size
+
+------------------------------------------------------------------------
+
+Returns the length of the queue.
+
+
+(from gem rexml-3.2.5)
+Implementation from Attributes
+------------------------------------------------------------------------
+  length
+
+------------------------------------------------------------------------
+
+Returns the count of attributes:
+
+  xml_string = <<-EOT
+    <root xmlns:foo="http://foo" xmlns:bar="http://bar">
+       <ele foo:att='1' bar:att='2' att='&lt;'/>
+    </root>
+  EOT
+  d = REXML::Document.new(xml_string)
+  ele = d.root.elements['//ele']   # => <a foo:att='1' bar:att='2' att='&lt;'/>
+  ele.attributes.length # => 3
+
+
+(from gem rexml-3.2.5)
+Implementation from Parent
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+(This method is an alias for REXML::Parent#size.)
+
+@return the number of children of this parent
+
+
+(from ruby core)
+Implementation from Set
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+(This method is an alias for Set#size.)
+
+Returns the number of elements.
+
+
+(from ruby core)
+Implementation from SizedQueue
+------------------------------------------------------------------------
+  length
+  size
+
+------------------------------------------------------------------------
+
+Returns the length of the queue.
+
+
+(from ruby core)
+Implementation from String
+------------------------------------------------------------------------
+  string.length -> integer
+
+------------------------------------------------------------------------
+
+Returns the count of characters (not bytes) in self:
+  "\x80\u3042".length # => 2
+  "hello".length # => 5
+
+String#size is an alias for String#length.
+
+Related: String#bytesize.
+
+
+(from ruby core)
+Implementation from StringIO
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+Returns the size of the buffer string.
+
+
+(This method is an alias for StringIO#size.)
+
+Returns the size of the buffer string.
+
+
+(from ruby core)
+Implementation from Struct
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+Returns the number of struct members.
+
+  Customer = Struct.new(:name, :address, :zip)
+  joe = Customer.new("Joe Smith", "123 Maple, Anytown NC", 12345)
+  joe.length   #=> 3
+
+
+(This method is an alias for Struct#size.)
+
+Returns the number of struct members.
+
+  Customer = Struct.new(:name, :address, :zip)
+  joe = Customer.new("Joe Smith", "123 Maple, Anytown NC", 12345)
+  joe.length   #=> 3
+
+
+(from ruby core)
+Implementation from Symbol
+------------------------------------------------------------------------
+  sym.length   -> integer
+  sym.size     -> integer
+
+------------------------------------------------------------------------
+
+Same as sym.to_s.length.
+
+
+(from ruby core)
+Implementation from Tempfile
+------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------
+
+(This method is an alias for Tempfile#size.)
+
+Returns the size of the temporary file.  As a side effect, the IO buffer
+is flushed before determining the size.
