@@ -1,0 +1,126 @@
+cd /d H:
+gem rdoc --all --ri --no-rdoc
+ri String
+
+H:\>ri string
+.string
+
+(from ruby core)
+Implementation from MatchData
+------------------------------------------------------------------------
+  mtch.string   -> str
+
+------------------------------------------------------------------------
+
+Returns a frozen copy of the string passed in to match.
+
+  m = /(.)(.)(\d+)(\d)/.match("THX1138.")
+  m.string   #=> "THX1138."
+
+
+(from ruby core)
+Implementation from Net::SMTP::Response
+------------------------------------------------------------------------
+
+The human readable reply text of the SMTP response
+
+
+(from gem rbs-1.0.4)
+Implementation from RBS::AST::Annotation
+------------------------------------------------------------------------
+
+
+(from gem rbs-1.0.4)
+Implementation from RBS::AST::Comment
+------------------------------------------------------------------------
+
+
+(from gem rbs-1.0.4)
+Implementation from RBS::Test::SetupHelper::InvalidSampleSizeError
+------------------------------------------------------------------------
+
+
+(from gem rexml-3.2.5)
+Implementation from REXML::Comment
+------------------------------------------------------------------------
+
+The content text
+
+
+(from gem rexml-3.2.5)
+Implementation from Functions
+------------------------------------------------------------------------
+  string( object=@@context[:node] )
+
+------------------------------------------------------------------------
+
+A node-set is converted to a string by returning the string-value of the
+node in the node-set that is first in document order. If the node-set is
+empty, an empty string is returned.
+
+A number is converted to a string as follows
+
+NaN is converted to the string NaN
+
+positive zero is converted to the string 0
+
+negative zero is converted to the string 0
+
+positive infinity is converted to the string Infinity
+
+negative infinity is converted to the string -Infinity
+
+if the number is an integer, the number is represented in decimal form
+as a Number with no decimal point and no leading zeros, preceded by a
+minus sign (-) if the number is negative
+
+otherwise, the number is represented in decimal form as a Number
+including a decimal point with at least one digit before the decimal
+point and at least one digit after the decimal point, preceded by a
+minus sign (-) if the number is negative; there must be no leading zeros
+before the decimal point apart possibly from the one required digit
+immediately before the decimal point; beyond the one required digit
+after the decimal point there must be as many, but only as many, more
+digits as are needed to uniquely distinguish the number from all other
+IEEE 754 numeric values.
+
+The boolean false value is converted to the string false. The boolean
+true value is converted to the string true.
+
+An object of a type other than the four basic types is converted to a
+string in a way that is dependent on that type.
+
+
+(from gem rss-0.2.9)
+Implementation from RSS::ConversionError
+------------------------------------------------------------------------
+
+
+(from ruby core)
+Implementation from StringIO
+------------------------------------------------------------------------
+  strio.string     -> string
+
+------------------------------------------------------------------------
+
+Returns underlying String object, the subject of IO.
+
+
+(from ruby core)
+Implementation from StringScanner
+------------------------------------------------------------------------
+  string()
+
+------------------------------------------------------------------------
+
+Returns the string being scanned.
+
+
+(from ruby core)
+Implementation from TempIO
+------------------------------------------------------------------------
+  string()
+
+------------------------------------------------------------------------
+
+The content of the TempIO as a String.
